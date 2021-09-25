@@ -1,0 +1,68 @@
+body {
+    margin: 20px;
+    font-family: "cursive", Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+    background-image: url(./pictures/3rd.jpg);
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 40px;
+}
+
+p {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid;
+    border-radius: 1rem;
+    font-size: 22px;
+}
+
+.box-container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    justify-content: space-around;
+
+}
+
+.box-item-1, .box-item-2,
+.box-item-3, .box-item-4, 
+.box-item-5, .box-item-6,
+.box-item-7, .box-item-8 { 
+    border: solid;
+    height: 300px;
+    width: 400px;
+}
+
+
+
+/* This media query allows smooth transition from phone to desktop*/
+
+@media screen and (max-width:1200px) {
+    .box-item-1, .box-item-2,
+    .box-item-3, .box-item-4, 
+    .box-item-5, .box-item-6,
+    .box-item-7, .box-item-8 {
+           width: 40%;
+           min-height: fit-content;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .box-item-1, .box-item-2,
+    .box-item-3, .box-item-4, 
+    .box-item-5, .box-item-6,
+    .box-item-7, .box-item-8 {
+           width: 40%;
+           min-height: fit-content;
+    }
+}
