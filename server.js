@@ -1,5 +1,5 @@
 // Copied from module 14 tech blog - MVC project
-
+// Utilized for connections
 
 const path = require('path');
 const express = require('express');
