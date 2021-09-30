@@ -2,14 +2,20 @@ body {
     margin: 0;
     font-family: "cursive", Georgia, Times, 'Times New Roman', serif;
     overflow-x: hidden;
-    background-image: url(./pictures/3rd.jpg);}
+    background-image: url(../pictures/3rd.jpg);}
 
-h1 {
+h1, #logo {
     color:  rgb(110, 105, 105);
     font-size: 30px;
     margin-bottom: 150px;
+    text-decoration: none;
+    font-weight: bold;
 }
-p {
+#addLink {
+    color: black;
+    font-size: 25px;
+}
+p, .subGallery {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +23,7 @@ p {
     margin: 100px auto;
  }
 
-.container {
+.container, .subGallery {
     width: 100%;
     height: auto;
     color: blanchedalmond;
@@ -25,8 +31,11 @@ p {
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
+    text-decoration: none;
 }
-
+.container{
+    margin-top: 150px;
+}
 .box {
     width: 20%;
     height: 300px;
@@ -44,10 +53,7 @@ p {
     margin: 100px auto;
 }
 
-a {
-    color: black;
-    font-size: 25px;
-}
+
 
 @media screen and (max-width:1200px) {
     .box{
