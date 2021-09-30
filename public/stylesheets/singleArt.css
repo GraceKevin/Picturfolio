@@ -1,0 +1,103 @@
+body {
+    margin: 20px;
+    font-family: "cursive", Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+    background-color: #12101a;;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 40px;
+    color: lightgray;
+}
+
+#back {
+    text-decoration: none;
+    color:lightgrey;
+}
+
+p {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid;
+    border-radius: 1rem;
+    font-size: 22px;
+    color: lightgray;
+}
+
+.box-container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    justify-content: space-around;
+
+}
+
+.comments{
+    margin-top: 50px;
+    border: 2px solid white;
+    color: white;
+}
+
+.coming_soon{
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.box-item { 
+    /* border: solid; */
+    height: 450px;
+    width: 600px;
+    box-shadow: 0px 0px 40px rgb(247, 248, 202);
+    border-radius: 3px;
+}
+
+.box-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.box-item img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+
+
+
+
+
+
+
+/* This media query allows smooth transition from phone to desktop*/
+
+@media screen and (max-width:1200px) {
+    .box-item-1, .box-item-2,
+    .box-item-3, .box-item-4, 
+    .box-item-5, .box-item-6,
+    .box-item-7, .box-item-8 {
+           width: 40%;
+           min-height: fit-content;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .box-item-1, .box-item-2,
+    .box-item-3, .box-item-4, 
+    .box-item-5, .box-item-6,
+    .box-item-7, .box-item-8 {
+           width: 40%;
+           min-height: fit-content;
+    }
+}
