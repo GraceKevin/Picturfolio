@@ -8,6 +8,20 @@
     <title>PicturFolio2</title>
 </head>
 <body>
+      <div class="wrapper">
+
+    <header>
+        <nav class="navbar bg-dark">
+  <a href="/"><button class="btn bg-success text-dark">Homepage</button></a>
+  {{#if loggedIn}}
+  <a href="/dashboard"><button class="btn text-dark btn-success">Dashboard</button></a>
+  <button id="logout" class="btn text-dark btn-success">Logout</button>
+  {{else}}
+  <a href="/login"><button class="btn bg-success">Login</button></a>
+  {{/if}}
+</nav>
+
+</header>
     <div class="lead-image">
         <div class="overlay">
             <h1>Welcome To PicturFolio</h1>
